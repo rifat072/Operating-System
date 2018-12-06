@@ -29,6 +29,10 @@ int kmain()
             else if(ch[0] =='s' && ch[1] == 'u' && ch[2] == 'b' && ch[3] == 's' && ch[4] == 't' && ch[5] == 'r' && ch[6] == 'p' && ch[7] == 'r' && ch[8] == 'e' && ch[9] == 'v' && ch[10] ==' '){
             	screen_substrprev(ch+11);
             }
+            else if(ch[0] == 's' && ch[1] == 't' && ch[2] == 'r' && ch[3] == 'l' && ch[4] == 'e' && ch[5] == 'n' && ch[6] == ' '){
+            	
+            	printnum(strlength(ch+7));
+            }
             else
             {
                 print("\nBad command!\n");

@@ -163,12 +163,11 @@ void screen_substrprev(string str) {
 	uint8 len = strlength(str);
 	uint32 i, j;
 	
-	for (i=(cursorY-3)*sw*2; i<(cursorY-1)*sw*2-len*2; i+=2) {
+	for (i=cursorY-1; i<(cursorY-1)*sw*2-len*2; i+=2) {
 		int found = 1;
 		for (j=0; j<len; j++) {
 			if (vidmem[i+j*2] != str[j]) {
 				found = 0;
-
 				break;
 			}
 		}
